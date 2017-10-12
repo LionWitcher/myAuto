@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lionwitcher.autorepair.AddCar">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/saveResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-3dp" />
+
+        <EditText
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите марку"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите модель"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <EditText
+            android:id="@+id/VIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите 17 значный VIN"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите год производства авто"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <EditText
+            android:id="@+id/odometr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите пробег в км"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <EditText
+            android:id="@+id/purchaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите дату покупки"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
